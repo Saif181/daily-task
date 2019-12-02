@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            .one{
+                float: left;      
+            }
+            
+        </style>
+    </head>
+
+    <body>
+        <div>
+            <button id="full">100%</button>
+            <button id="half">50%</button>
+            <button id="quater">25%</button>
+            <button id="less">10%</button>
+        </div><br>
+            <div class="one" style="background-color: green; height: 50px; width: 50px;">One</div>
+            <div class="one" style="background-color: blue; height: 50px; width: 50px;">two</div>
+            <div class="one" style="background-color: yellow; height: 50px; width: 50px;">three</div>
+            <div class="one" style="background-color: lightcoral; height: 50px; width: 50px;">four</div>
+            <div class="one" style="background-color: red; height: 50px; width: 50px;">five</div>
+            <div class="one" style="background-color: orange; height: 50px; width: 50px;">six</div>
+            <div class="one" style="background-color: pink; height: 50px; width: 50px;">seven</div>
+            <div class="one" style="background-color: purple; height: 50px; width: 50px;">eight</div>
+            <div class="one" style="background-color: aqua; height: 50px; width: 50px;">nine</div>
+            <div class="one" style="background-color: brown; height: 50px; width: 50px;">ten</div>
+        
+
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script>
+            $("#full").click(function(){
+                $(".one").animate({width:"100%",})
+            });
+            $("#half").click(function(){
+                $(".one").animate({width:"50%"})
+            });
+            $("#quater").click(function(){
+                $(".one").animate({width:"25%"})
+            });
+            $("#less").click(function(){
+                $(".one").animate({width:"10%"})
+            });
+        </script>
+    </body>
+</html>

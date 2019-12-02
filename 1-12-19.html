@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            function val(){
+                var a = document.getElementById("email").value;
+                var regx = /^([\w-.]+@(?!gmail\.com)(?!yahoo\.com)(?!hotmail\.com)(?!outlook\.com)([\w-]+\.)+[\w-]{2,4})?$/
+                if(regx.test(a)){
+                    document.getElementById("email").style.borderColor="green";
+                    document.getElementById("txt").innerHTML="valid";
+                    document.getElementById("txt").style.visibility="visible";
+                    document.getElementById("txt").style.color="green";
+
+                }
+                else{
+                    document.getElementById("email").style.borderColor="red";
+                    document.getElementById("txt").innerHTML="invalid";
+                    document.getElementById("txt").style.visibility="visible";
+                    document.getElementById("txt").style.color="red";
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <input type="text" id="email">
+        <button id="btn" onclick="val()">click</button>
+        <label id="txt" style="color: green; visibility: hidden;"></label>
+    </body>
+</html>
+
