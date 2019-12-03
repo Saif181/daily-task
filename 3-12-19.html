@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+             body{
+                margin-left: 500px;
+                margin-top: 100px;
+            } 
+        </style>
+    </head>
+    <body>
+        <div class="one" style="height: 600px; width: 600px; background-color: green;"><h3>div 1</h3>
+            <div class="two" style="height: 500px; width: 500px; background-color: orange; margin: auto;"><h3>div 2</h3>
+                <div class="three" style="height: 400px; width: 400px; background-color: lightskyblue; margin: auto;"><h3>div 3</h3>
+                    <div class="four" style="height: 300px; width: 300px; background-color: coral; margin: auto;"><h3>div 4</h3>
+                        <div class="five" style="height: 200px; width: 200px; background-color: springgreen; margin: auto;"><h3>div 5</h3>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script>
+            $(".one").click(function(e){
+                e.stopPropagation();
+                alert("div 1");
+            });
+            $(".two").click(function(e){
+                e.stopPropagation();
+                alert("div 2");
+            });
+            $(".three").click(function(e){
+                e.stopPropagation();
+                alert("div 3");
+            });
+            $(".four").click(function(e){
+                e.stopPropagation();
+                alert("div 4");
+            });
+            $(".five").click(function(e){
+                e.stopPropagation();
+                alert("div 5");
+            });
+        </script>
+
+    </body>
+</html>
